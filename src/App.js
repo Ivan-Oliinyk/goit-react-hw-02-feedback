@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import { Content } from "./AppStyled";
 import FeedbackOptions from "./components/FeedBackOption/FeedBackOption";
 import Notification from "./components/Notification/Notification";
 import Section from "./components/Section/Section";
 import Statistic from "./components/Statistic/Statistic";
 
-const Content = styled.div`
-  padding: 10px 15px;
-`;
 export default class App extends Component {
   state = {
     good: 0,

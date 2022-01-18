@@ -1,17 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
-
-const StatisticContent = styled.div`
-  ul {
-    list-style: none;
-
-    li {
-      font-size: 16px;
-      font-weight: 600;
-    }
-  }
-`;
+import { StatisticContent } from "./StaticStyled";
 
 const Statistic = ({ good, neutral, bad, total, positivePercentage }) => {
   return (

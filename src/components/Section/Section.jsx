@@ -1,14 +1,6 @@
 import propTypes from "prop-types";
 import React from "react";
-import styled from "styled-components";
-
-const SectionWrapper = styled.section`
-  margin-bottom: 15px;
-
-  h1 {
-    font-size: 26px;
-  }
-`;
+import { SectionWrapper } from "./SectionStyled";
 
 const Section = ({ title, children }) => {
   return (
@@ -21,6 +13,7 @@ const Section = ({ title, children }) => {
 
 Section.propTypes = {
   title: propTypes.string,
+  children: propTypes.element,
 };
 
 export default Section;
